@@ -1,0 +1,39 @@
+import java.util.*;
+public class DepositSchemes
+{
+    public static void main (String[]args)
+    {
+        int a,rg,rs;
+        double p,t,i=0.0;
+        Scanner bo = new Scanner (System.in);
+        System.out.println("Enter the principal:");
+        p = bo.nextDouble();
+        System.out.println("Enter your age:");
+        a = bo.nextInt();
+        System.out.println("Enter the number of years:");
+        t = bo.nextDouble();
+        if (a<60 && t<=1)
+            i = (p*7.5*t)/100;
+        else if (a<=60 && t<=1)
+            i = (p*8*t)/100;
+        else if (a<60 && t<=2)
+            i = (p*8.5*t)/100;
+        else if (a<=60 && t<=2)
+            i = (p*9*t)/100;
+        else if (a<60 && t<=3)
+            i = (p*9.5*t)/100;
+        else if (a<=60 && t<=3)
+            i = (p*10*t)/100;
+        else if (a<60 && t>3)
+            i = (p*10*t)/100;
+        else if (a<=60 && t>3)
+            i = (p*11*t)/100;
+        double am = p+i;
+        System.out.println("Amount deposited = "+p);
+        System.out.println("Term = "+t);
+        System.out.println("Age = "+a);
+        System.out.println("Interst earned = "+i);
+        System.out.println("Amount paid = "+am);
+    }
+}
+
