@@ -1,0 +1,12 @@
+public class Interest
+{
+    public static void main(int p, int r, int t)
+    {
+        double si,ci=0,amt;
+        si = p*r*t/100.0;
+        amt = p*(Math.pow(1+r/100.0,t));
+        ci = amt-p;
+        System.out.println("The simple interest is ₹"+si);
+        System.out.println("The compound interest is ₹"+ci);
+    }
+}
