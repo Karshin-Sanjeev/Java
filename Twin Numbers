@@ -1,0 +1,32 @@
+import java.util.*;
+public class TwinNos
+{
+    public static void main (String[]args)
+    {
+        int a,b,a1=0,b1=0,n,x;
+        Scanner bo = new Scanner (System.in);
+        a = bo.nextInt();
+        b = bo.nextInt();
+        for (n=1;n<=a;n++)
+        {
+            if (a%n==0)
+            {
+                a1++;
+            }
+        }
+        for (n=1;n<=b;n++)
+        {
+            if (b%n==0)
+            {
+                b1++;
+            }
+        }
+        x=Math.abs(a-b);
+        if (x==2 && a1==2 && b1==2)
+        {
+            System.out.println("Twin prime");
+        }
+        else
+        System.out.println("Not twin prime");
+    }
+}
