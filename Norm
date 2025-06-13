@@ -1,0 +1,20 @@
+import java.util.*;
+public class Norm
+{
+    public static void main (String[]args)
+    {
+        Scanner sc = new Scanner (System.in);
+        int n,n2,i,s=0,ld=0;
+        double sq;
+        n = sc.nextInt();
+        n2=n;
+        for (i=0;i<n;i++)
+        {
+            ld=n2%10;
+            s=s+(ld*ld);
+            n2=n2/10;
+        }
+        sq = Math.sqrt(s);
+        System.out.println (sq);
+    }
+}
