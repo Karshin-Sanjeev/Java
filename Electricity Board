@@ -1,0 +1,28 @@
+import java.util.*;
+public class ElectricityBoard
+{
+    public static void main (String[]args)
+    {
+        double a,b=0;
+        Scanner bo = new Scanner (System.in);
+        System.out.println ("Enter your energy consumption:") 
+        a = bo.nextDouble();
+        if (a<=100)
+        {
+            b = 1.80*a;
+        }
+        else if (a>100 || a<=300)
+        {
+            b = 180+((2.30*a)-100);
+        }
+        else if (a>300 || a<=500)
+        {
+            b = 180+460+((2.80*a)-300);
+        }
+        else if (a<500)
+        {
+            b = 180+460+560+((3.50*a)-500);
+        }
+        System.out.println(b);
+    }
+}
