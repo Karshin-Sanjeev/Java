@@ -1,0 +1,28 @@
+import java.util.*;
+public class HimutronParticle
+{
+    public static void main (String[]args)
+    {
+        int t,d=0;
+        Scanner bo = new Scanner (System.in);
+        System.out.println("Enter the time in seconds:");
+        t = bo.nextInt();
+        if (t<=10)
+        {
+            d = 10*t;
+        }
+        else if (t>10 && t<=30)
+        {
+            d = 15*(t-10);
+        }
+        else if (t>30 && t<=60)
+        {
+            d = 20*(t-30);
+        }
+        else if (t>60)
+        {
+            d = 25*(t-60);
+        }
+        System.out.println("The distance travelled = "+d);
+    }
+}
