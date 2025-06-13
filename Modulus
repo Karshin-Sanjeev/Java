@@ -1,0 +1,17 @@
+import java.util.*;
+public class Modulus
+{
+    public static void main (String[]args)
+    {
+        int n;
+        double a,b,c;
+        Scanner bo = new Scanner (System.in);
+        for (n=1;n<=15;n++)
+        {
+            a = bo.nextDouble();
+            b = bo.nextDouble();
+            c = a%b;
+            System.out.println("The modulus is "+c);
+        }
+    }
+}
