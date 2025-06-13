@@ -1,0 +1,36 @@
+import java.util.*;
+public class StringConverter
+{
+    public static void main (String[]args)
+    {
+        Scanner sc = new Scanner (System.in);
+        int i,l;
+        char ch,ch1;
+        String str,st1 = "";
+        str = sc.nextLine();
+        str = str.toUpperCase();
+        l = str.length();
+        for (i=0;i<l;i++)
+        {
+            ch = str.charAt(i);
+            if (Character.isLetter(ch))
+            {
+                if (ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+                {
+                    ch1 = (char)(ch+1);
+                    st1=st1+ch1;
+                }
+                else
+                {
+                    ch1 = (char)(ch-1);
+                    st1=st1+ch1;
+                }
+            }
+            else
+            {
+                st1=st1+ch;
+            }
+        }
+        System.out.println (st1);
+    }
+}
