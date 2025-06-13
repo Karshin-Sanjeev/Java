@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Calculator
+{
+    public static void main (String[]args)
+    {
+        Scanner bo = new Scanner(System.in);
+        double a, b;
+        System.out.println ("Enter a number:");
+        a = bo.nextDouble();
+        System.out.println ("Enter another one:");
+        b = bo.nextDouble();
+        double add, sub=0,sub2=0,mul,div;
+        add = a+b;
+        mul = a*b;
+        div=a/b;
+        sub = a-b;
+        sub2 = b-a;
+        System.out.println ("The sum is "+add);
+        System.out.println ("The first number minus the second number is "+sub);
+        System.out.println ("The second number minus the first number is "+sub2);
+        System.out.println ("The product is "+mul);
+        System.out.println ("The quotient is "+div);
+    }
+    }
