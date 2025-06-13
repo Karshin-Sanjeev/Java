@@ -1,0 +1,61 @@
+import java.util.*;
+public class StreamSelection
+{
+    public static void main (String[]args)
+    {
+        int eng,mat,sci,s,te,tm,ts,pe,pm,ps;
+        Scanner bo = new Scanner (System.in);
+        System.out.println("Welcome to the stream selection program!\n"+"Enter you english marks (out of 100):");
+        eng = bo.nextInt();
+        System.out.println("Enter you maths marks (out of 100):");
+        mat = bo.nextInt();
+        System.out.println("Enter you science marks (out of 100):");
+        sci = bo.nextInt();
+        if (eng==100 && mat==100 && sci==100)
+        {
+            System.out.println("Congratulations on getting a perfect score!");
+        }
+        if (eng>=60 && mat>=60 && sci>=60)
+        {
+            if (eng>=80 && mat>=80 && sci>=80)
+            {
+                System.out.println("Your recommended stream is Pure Science.");
+            }
+            else if (eng>=80 && mat>=60 && sci>=80)
+            {
+                System.out.println("Your recommended stream is Bio Science.");
+            }
+            else if (eng>=60 && mat>=60 && sci>=60)
+            {
+                System.out.println("Your recommended stream is Commerce.");
+            }
+        }
+        else
+        {
+            System.out.println("You are unqualified for any stream.\n"+"A minimum score of 60% is required.\n"+"Please try again next year.");
+        }
+        System.out.println("Thank you for consulting us!");
+        System.out.println("Rate this tool out of 5:");
+        int n = bo.nextInt();
+        if (n==1)
+        {
+            System.out.println("You have been permanentaly banned from this tool.");
+        }
+        else if (n==2)
+        {
+            System.out.println("You have been temporarily banned from this tool.");
+        }
+        else if (n==3)
+        {
+            System.out.println("We apologize for the inconvenience.");
+        }
+        else if (n==4)
+        {
+            System.out.println("Thank you!");
+        }
+        else if (n==5)
+        {
+            System.out.println("You have been given a free trial for all our platforms and tools for a month. Enjoy!");
+        }
+    }
+}
