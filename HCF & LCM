@@ -1,0 +1,21 @@
+import java.util.*;
+public class HCFLCM
+{
+    public static void main (String[]args)
+    {
+        int a,b,p,n,hcf=1,lcm;
+        Scanner bo = new Scanner (System.in);
+        a = bo.nextInt();
+        b = bo.nextInt();
+        p = a*b;
+        for (n=1;n<p;n++)
+        {
+            if (a%n==0 && b%n==0)
+            {
+                hcf = n;
+            }
+        }
+        lcm = p/hcf;
+        System.out.println("The HCF is "+hcf+" and the LCM is "+lcm);
+    }
+}
