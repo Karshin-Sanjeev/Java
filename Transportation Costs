@@ -1,0 +1,30 @@
+import java.util.*;
+public class TransportationCosts
+{
+    public static void main (String[]args)
+    {
+        int d,f;
+        System.out.println("Enter the distance you are travelling:");
+        Scanner bo = new Scanner (System.in);
+        d = bo.nextInt();
+        if (d<=10)
+        {
+            System.out.println("80 Rs.");
+        }
+        else if (d>=11 && d<=20)
+        {
+            f = 80 + 6*(d-10);
+            System.out.println(f+" Rs.");
+        }
+        else if (d>=21 && d<=30)
+        {
+            f = 80 + 60 + 5*(d-20);
+            System.out.println(f+" Rs.");
+        }
+        else if (d>=31)
+        {
+            f = 80 + 60 + 50 + 4*(d-30);
+            System.out.println(f+" Rs.");
+        }
+    }
+}
