@@ -1,0 +1,26 @@
+import java.util.*;
+public class SuperspyNo
+{
+    public static void main (String[]args)
+    {
+        Scanner sc = new Scanner (System.in);
+        int n,n2,ld,s=0,d=0;
+        n = sc.nextInt();
+        n2=n;
+        while (n>0)
+        {
+            ld=n2%10;
+            s=s+ld;
+            d++;
+            n2=n2/10;
+        }
+        if (d==s)
+        {
+            System.out.println ("Superspy number.");
+        }
+        else
+        {
+            System.out.println ("Not a superspy number.");
+        }
+    }
+}
