@@ -1,0 +1,33 @@
+import java.util.*;
+public class PalPrimeNos
+{
+    public static void main (String[]args)
+    {
+        int a,b,c=0,s=0,t,n,r;
+        Scanner bo = new Scanner (System.in);
+        a = bo.nextInt();
+        t = a;
+        for (n=1;n<=t;n++)
+        {
+            if (t%n==0)
+            {
+                c++;
+            }
+        }
+        while (a>0)
+        {
+            r = a%10;
+            s = s*10+r;
+            a = a/10;
+        }
+        if (t==s && c==2)
+        {
+            
+            System.out.println(t +" is a PalPrime number");  
+        }  
+        else  
+        {  
+            System.out.println(t +" is not a PalPrime number");  
+        }
+    }
+}
