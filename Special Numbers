@@ -1,0 +1,29 @@
+import java.util.*;
+public class SpecialNos
+{
+    public static void main (String[]args)
+    {
+        Scanner bo = new Scanner (System.in);
+        int a,b,c,d,s=0,f=1;
+        a = bo.nextInt();
+        b=a;
+        while (b!=0)
+        {
+            c = b%10;
+            for (d=1;d<=c;d++)
+            {   f = f*d;
+                s = s+f;
+                f = 1;
+                b = b/10;
+            }
+        }
+        if (s==a)
+        {
+            System.out.println("Special no.");
+        }
+        else
+        {
+            System.out.println("Not a special no.");
+        }
+    }
+}
